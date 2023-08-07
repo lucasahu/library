@@ -2,16 +2,12 @@
 
 TOP Library Project
 
------
-
 # to-do
 
 - Improve reactivity
 - Add form validation
 - Add edit feature
 - QOL Changes
-
------
 
 # stack
 
