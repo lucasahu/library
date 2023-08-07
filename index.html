@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/svg+xml" href="img/library_books_FILL1_wght400_GRAD0_opsz48.svg"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="modal">
+            <form id="new-book-form" style="display: none">
+                <div class="instruction-row">
+                    <h1>Add information about your book</h1>
+                </div>
+                <div class="title-row">
+                    <input type="text" id="title" class="form-control" placeholder="Title">
+                </div>
+                <div class="author-row">
+                    <input type="text" id="author" class="form-control" placeholder="Author">
+                </div>
+                <div class="pages-row">
+                    <input type="number" id="pages" class="form-control" placeholder="Pages">
+                </div>
+                <div class="read-row">
+                    <label for="read">I've read the book</label>
+                    <input type="checkbox" id="read" class="form-check-input mt-0">
+                </div>
+                <div class="submit-row">
+                    <button class="btn btn-outline-secondary back-btn">Back</button>
+                    <input type="submit" value="Add Book" class="btn btn-outline-success add-book-btn">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">lucasahu</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/lucasahu">GitHub</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/lucasahudev">Twitter</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div class="title">
+            <p class="title-text">Library</p>
+            <p class="subtitle-text">Here you can store all your books and keep track of which ones you have finished reading</p>
+        </div>
+        <button id="new-book-btn" class="btn btn-outline-dark btn-lg new-book-btn">New Book</button>
+        <div class="table">
+            <div class="header">
+                <p>Book Name</p>
+                <p>Book Author</p>
+                <p>Pages</p>
+                <p>Status</p>
+                <p>Delete</p>
+            </div>
+            <div id="library">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
